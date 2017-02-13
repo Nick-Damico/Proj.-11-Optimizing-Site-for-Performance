@@ -22,3 +22,9 @@ footer p {
     font-weight: 300;
     padding-top: 0.5rem;
 }
+
+@media screen and (max-width: 40.06) {
+    .small-6 {
+        width: 48%;
+    }
+}

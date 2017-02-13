@@ -28,12 +28,22 @@
 }
 @media only screen and (min-width: 40.063em) {
     .menu {
-        height: 7rem;
+        height: 9rem;
     }
     .menu .inline-list {
         float: left;
         margin: 0 0 0 1.5rem;
     }
+}
+@media only screen and (max-width: 40.060em) {
+    .logo {
+        max-width: 100%;
+    }
+
+    .menu .inline-list.account {
+        float: none;
+    }
+
 }
 .menu .account {
     float: right;
@@ -75,6 +85,12 @@
 .menu .logo b {
     color: rgb(47, 171, 206);
     font-family: "Ubuntu";
+}
+#main-logo {
+    display: inline-block;
+    width: 40rem;
+    height: 3rem;
+    text-indent: 0;
 }
 @media only screen and (min-width: 40.063em) {
     .logo {
