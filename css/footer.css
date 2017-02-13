@@ -10,10 +10,11 @@ footer .columns {
 footer .social {
     text-align: right;
 }
-footer .social img {
-    height: 35px;
-    width: 35px;
+footer .social svg {
+    height: 48px;
+    width: 48px;
 }
+
 footer p {
     color: rgb(125, 136, 146);
     font-family: "Ubuntu";

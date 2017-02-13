@@ -1,0 +1,30 @@
+{
+  "name": "site-optimization",
+  "version": "1.0.0",
+  "description": "Techdegree Proj. 11 : Site Optimization",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-Damico/Proj.-11-Optimizing-Site-for-Performance.git"
+  },
+  "keywords": [
+    "Techdegree",
+    "Treehouse",
+    "Front-End",
+    "Degree",
+    "Site",
+    "Optimization"
+  ],
+  "author": "Nicholas Damico nickalan82@icloud.com / nicholasdamico.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick-Damico/Proj.-11-Optimizing-Site-for-Performance/issues"
+  },
+  "homepage": "https://github.com/Nick-Damico/Proj.-11-Optimizing-Site-for-Performance#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
