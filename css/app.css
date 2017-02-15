@@ -7079,7 +7079,7 @@ body {
     color: #fff;
 }
 .menu .logo {
-    background: url('../img/logo.svg') no-repeat top left;
+    background: url('../img/logo.v2.svg') no-repeat top left;
     background-size: contain;
     font-family: "Arvo", serif;
     font-size: 2rem;
@@ -7108,7 +7108,7 @@ body {
     }
 }
 .hero {
-    background: url("../img/photos/photo4.jpg") no-repeat center center;
+    background: url("../img/images/photo4.jpg") no-repeat center center;
     background-size: cover;
     height: 60vh;
     margin-bottom: 1rem;
@@ -7157,8 +7157,8 @@ body {
 
 .image-grid .image a {
     border-radius: .5rem .5rem 0 0;
-    /* max-height: 15rem; */
-    /* min-height: 15rem; */
+     /*max-height: 15rem; */
+     /*min-height: 15rem; */
     display: block;
     min-width: 100%;
     overflow: hidden;

@@ -6,7 +6,10 @@
   cssClean = require('gulp-clean-css'),
     rename = require('gulp-rename'),
       maps = require('gulp-sourcemaps'),
-       del = require('del');
+       del = require('del'),
+     image = require('gulp-image'),
+  imagemin = require('gulp-imagemin');
+
 
 gulp.task("concatScripts", function () {
 	return gulp.src([
@@ -53,11 +56,28 @@ gulp.task("minifyCss", ["concatCSS"], function () {
 			   .pipe(gulp.dest('css'));
 });
 
+gulp.task('jpgMin', function () {
+	return gulp.src('img/photos/photo2.jpg')
+			   .pipe(imagemin({quality: 'low'}))
+			   .pipe(gulp.dest('images'));
+});
+//  http://picresize.com/b58a3800a3f27f 
+ 
+gulp.task('image', function () {
+  gulp.src('img/photos/*.jpg')
+    .pipe(image({
+      jpegRecompress: true,
+      jpegoptim: false,
+      mozjpeg: false,
+      concurrent: 12}))
+    .pipe(gulp.dest('./dist/img/images'));
+});
+
 gulp.task("clean", function () {
 	del(['dist', 'css/app*.css*', 'js/scripts*.js*']);
 });
 
-gulp.task("build", ['minifyCss', 'minifyScripts'], function () {
+gulp.task("build", ['minifyCss', 'minifyScripts', 'image'], function () {
 	return gulp.src(["css/app.min.css", "js/scripts.min.js", "index.html", "img/**"], { base: './'})
 			   .pipe(gulp.dest('dist'));
 });
