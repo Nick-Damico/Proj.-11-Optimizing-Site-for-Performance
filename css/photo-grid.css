@@ -18,7 +18,7 @@
 
 .image-grid .image a {
     border-radius: .5rem .5rem 0 0;
-     /*max-height: 15rem; */
+     max-height: 15rem; 
      /*min-height: 15rem; */
     display: block;
     min-width: 100%;
