@@ -5,6 +5,7 @@
 **	Treehouse | Front End Techdegree Project: 11 Site Performance optimization  **
 
 //	View Project 11 here..
+ https://nick-damico.github.io/Proj.-11-Optimizing-a-Site-for-Performance/.
 
 //	Instructions
 
