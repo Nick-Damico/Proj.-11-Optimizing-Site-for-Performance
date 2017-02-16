@@ -71,14 +71,14 @@ gulp.task('image', function () {
       jpegoptim: false,
       mozjpeg: false,
       concurrent: 12}))
-    .pipe(gulp.dest('./dist/img/images'));
+    .pipe(gulp.dest('./img/images'));
 });
 
 gulp.task("clean", function () {
 	del(['dist', 'css/app*.css*', 'js/app*.js*']);
 });
-
-gulp.task("build", ['minifyCss', 'minifyScripts', 'image'], function () {
+gulp.task("build", ['minifyCss', 'minifyScripts', 'image']);
+gulp.task("dist", ['minifyCss', 'minifyScripts', 'image'], function () {
 	return gulp.src(["css/app.min.css", "js/app.min.js", "index.html", "img/**"], { base: './'})
 			   .pipe(gulp.dest('dist'));
 });
