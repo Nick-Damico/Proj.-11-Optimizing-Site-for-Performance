@@ -33,20 +33,33 @@
 
  	* Thumbnail images used for img-grid preview. Full size photos only load on js event 'click'.
 
+ 	* Reports From Optimization monitoring Tools
+
 .-----------------------------------------------------------------------------------------------------------.
 | Report from 5 run(s) for <http://localhost:8080/> using phantomas v1.18.0                                 |
 |-----------------------------------------------------------------------------------------------------------|
 |             Metric             |     min      |     max      |   average    |    median    |    stddev    |
 |--------------------------------|--------------|--------------|--------------|--------------|--------------|
-| requests                       |           22 |           22 |           22 |           22 |            0 |
-| gzipRequests                   |            0 |            0 |            0 |            0 |            0 |
+| requests                       |           26 |           26 |           26 |           26 |            0 |
+| gzipRequests                   |            5 |            5 |            5 |            5 |            0 |
 | postRequests                   |            0 |            0 |            0 |            0 |            0 |
-| httpsRequests                  |            1 |            1 |            1 |            1 |            0 |
+| httpsRequests                  |            5 |            5 |            5 |            5 |            0 |
 | notFound                       |            0 |            0 |            0 |            0 |            0 |
-| bodySize [bytes]               |      1605912 |      1605912 |      1605912 |      1605912 |            0 |
-| contentLength [bytes]          |      1605912 |      1605912 |      1605912 |      1605912 |            0 |
-| httpTrafficCompleted [ms]      |          132 |          236 |        168.2 |          135 |        43.82 |
-| timeToFirstByte [ms]           |            5 |           10 |          6.6 |            6 |         1.74 |
-| timeToLastByte [ms]            |           24 |           49 |         34.4 |           30 |        10.21 |
+| bodySize [bytes]               |      1156627 |      1177656 |    1162649.2 |      1158762 |      7676.77 |
+| contentLength [bytes]          |      1156627 |      1177656 |    1162649.2 |      1158762 |      7676.77 |
+| httpTrafficCompleted [ms]      |         1710 |         4823 |       3090.8 |         2551 |      1270.24 |
+| timeToFirstByte [ms]           |            7 |           30 |         12.2 |            7 |         8.98 |
+| timeToLastByte [ms]            |           27 |           45 |         32.4 |           31 |          6.5 |
 | requestsWithTimeout            |            0 |            0 |            0 |            0 |            0 |
 '-----------------------------------------------------------------------------------------------------------'
+
+	* Report from Google Chrome Dev Tools.
+.-----------------------------------------------------------------------------------------------------.
+|	* Report from Google Chrome Dev Tools.	v.56 64bit					                              |
+|																									  |
+|	22 requests  |  1.1MB transferred  |  Finish: 287ms  |  DOMContentLoad: 396ms |  Load: 463ms	  |				
+|																									  |
+'-----------------------------------------------------------------------------------------------------'
+	
+
+
