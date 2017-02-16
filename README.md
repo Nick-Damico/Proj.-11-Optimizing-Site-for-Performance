@@ -31,20 +31,22 @@
  	* Sprite Map created for svg social icons. Reducing the
  	  number of HTTP Requests down to (1) from (3).
 
+ 	* Thumbnail images used for img-grid preview. Full size photos only load on js event 'click'.
+
 .-----------------------------------------------------------------------------------------------------------.
 | Report from 5 run(s) for <http://localhost:8080/> using phantomas v1.18.0                                 |
 |-----------------------------------------------------------------------------------------------------------|
 |             Metric             |     min      |     max      |   average    |    median    |    stddev    |
 |--------------------------------|--------------|--------------|--------------|--------------|--------------|
-| requests                       |           21 |           21 |           21 |           21 |            0 |
+| requests                       |           22 |           22 |           22 |           22 |            0 |
 | gzipRequests                   |            0 |            0 |            0 |            0 |            0 |
 | postRequests                   |            0 |            0 |            0 |            0 |            0 |
 | httpsRequests                  |            1 |            1 |            1 |            1 |            0 |
 | notFound                       |            0 |            0 |            0 |            0 |            0 |
-| bodySize [bytes]               |      3518318 |      3518318 |      3518318 |      3518318 |            0 |
-| contentLength [bytes]          |      3518318 |      3518318 |      3518318 |      3518318 |            0 |
-| httpTrafficCompleted [ms]      |          137 |          144 |        139.4 |          139 |         2.58 |
-| timeToFirstByte [ms]           |            6 |            7 |          6.4 |            6 |         0.49 |
-| timeToLastByte [ms]            |           23 |           24 |         23.6 |           24 |         0.49 |
+| bodySize [bytes]               |      1605912 |      1605912 |      1605912 |      1605912 |            0 |
+| contentLength [bytes]          |      1605912 |      1605912 |      1605912 |      1605912 |            0 |
+| httpTrafficCompleted [ms]      |          132 |          236 |        168.2 |          135 |        43.82 |
+| timeToFirstByte [ms]           |            5 |           10 |          6.6 |            6 |         1.74 |
+| timeToLastByte [ms]            |           24 |           49 |         34.4 |           30 |        10.21 |
 | requestsWithTimeout            |            0 |            0 |            0 |            0 |            0 |
 '-----------------------------------------------------------------------------------------------------------'

@@ -18,17 +18,18 @@ gulp.task("concatScripts", function () {
 		'js/foundation.js',
 		'js/foundation.equalizer.js',
 		'js/foundation.reveal.js',
+		'js/scripts.js'
 		])
 		.pipe(maps.init())
-		.pipe(concat('scripts.js'))
+		.pipe(concat('app.js'))
 		.pipe(maps.write('./'))
 		.pipe(gulp.dest('js'));
 });
 
 gulp.task("minifyScripts",['concatScripts'], function () {
-	return gulp.src("js/scripts.js")
+	return gulp.src("js/app.js")
 			   .pipe(uglify())
-			   .pipe(rename('scripts.min.js'))
+			   .pipe(rename('app.min.js'))
 			   .pipe(gulp.dest('js'));
 });
 
@@ -74,11 +75,11 @@ gulp.task('image', function () {
 });
 
 gulp.task("clean", function () {
-	del(['dist', 'css/app*.css*', 'js/scripts*.js*']);
+	del(['dist', 'css/app*.css*', 'js/app*.js*']);
 });
 
 gulp.task("build", ['minifyCss', 'minifyScripts', 'image'], function () {
-	return gulp.src(["css/app.min.css", "js/scripts.min.js", "index.html", "img/**"], { base: './'})
+	return gulp.src(["css/app.min.css", "js/app.min.js", "index.html", "img/**"], { base: './'})
 			   .pipe(gulp.dest('dist'));
 });
 
