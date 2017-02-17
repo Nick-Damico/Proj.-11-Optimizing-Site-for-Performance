@@ -7,7 +7,7 @@ $anchors.on('click', function (e) {
 		// This stops from multiple images showing up in modal display.
 	$('img.on').remove();
 	var parent = $(e.target).parent();
-	//	Get relative img path for photo, url path stored in custom attr data-img-url.
+	//	Get <img> src path for photo, url path stored in custom attr data-img-url.
 	var src = parent.attr('data-img-url');
 	//	Get modal id for cliked element stored in data-reaveal-id attr.
 	var divId = parent.attr('data-reveal-id');
