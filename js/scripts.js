@@ -3,8 +3,8 @@ var $anchors = $('div.columns > a');
 
 //	Add on 'click' event to anchor elements
 $anchors.on('click', function (e) {	
-	//	Remove any image loaded into modal on click.
-		// This stops from multiple images showing up in modal display.
+	//Remove any image loaded into modal on click.
+	  // This stops from multiple images showing up in modal display.
 	$('img.on').remove();
 	var parent = $(e.target).parent();
 	//	Get <img> src path for photo, url path stored in custom attr data-img-url.
