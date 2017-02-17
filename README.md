@@ -54,13 +54,10 @@
  requestsWithTimeout            |            0 |            0 |            0 |            0 |            0 |
 
 
-	* Report from Google Chrome Dev Tools.
-.-----------------------------------------------------------------------------------------------------.
-|	* Report from Google Chrome Dev Tools.	v.56 64bit					                              |
-|																									  |
-|	22 requests  |  1.1MB transferred  |  Finish: 287ms  |  DOMContentLoad: 396ms |  Load: 463ms	  |				
-|																									  |
-'-----------------------------------------------------------------------------------------------------'
-	
+**Google Chrome Dev tools Network Report**
+
+	Requests   |	Transferred	 |	Finished   |	DOMContentLoaded   |	Load    |
+-------------- | --------------- | ----------- | --------------------- | ---------- |
+ 22			   |	918KB        |    350ms    |		476ms		   |	582ms   |	
 
 
