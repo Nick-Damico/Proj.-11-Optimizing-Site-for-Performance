@@ -1,6 +1,10 @@
 .image-grid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1300px;
     padding: 0 3rem;
 }
+
 .image-grid h2 {
     color: rgb(73, 85, 96);
     font-family: "Arvo";
@@ -8,6 +12,11 @@
     font-style: italic;
     font-weight: normal;
 }
+
+.image-grid img {
+    width: 100%;
+}
+
 .image-grid .row {
     max-width: 100%;
     margin-bottom: 1rem;
