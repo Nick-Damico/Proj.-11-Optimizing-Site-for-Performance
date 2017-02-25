@@ -1,4 +1,6 @@
-//	Author: Nicholas D'Amico Contact: nickalan82@icloud.com Front End Techdegree Program
+//	Author: Nicholas D'Amico 
+//	Contact: nickalan82@icloud.com 
+//	Front End Techdegree Program
 
 //	Checked project in: Chorme 55 64-bit FireFox 50.0 & 49.0.1 Safari 10.0.2
 
